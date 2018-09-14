@@ -30,10 +30,11 @@ The "robust" directory contains implementations for
 ## How to run
 For each filter and within each implementation folder, run the "demo" script to see a preconfigured example.
 e.g. to run the CPHD filter with a UKF based implementation:
-
-'addpath _common'
-'cd cphd/ukf/'
-'demo'
+```
+>> addpath _common
+>> cd cphd/ukf/
+>> demo
+```
 
 ## Notes:
 
