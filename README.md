@@ -1,6 +1,6 @@
 # Tracking_filter
 
-This is a beta release for a suite of MATLAB based RFS filtering/tracking codes, from ====================[http://ba-tuong.vo-au.com/codes.html]====================
+This is a beta release for a suite of MATLAB based RFS filtering/tracking codes, from site[http://ba-tuong.vo-au.com/codes.html]
 
 The "_common" subdirectory of shared functions should be added to your MATLAB path.
 
@@ -27,14 +27,15 @@ The "robust" directory contains implementations for
 	"jointcphd"		Jointly unknown lambda and P_D CPHD filter (with BGM/EKF/UKF/SMC versions)
 	"jointcbmember"		Jointly unknown lambda and P_D CBMeMBer filter (SMC version only; but unlike the CPHD variants which estimate the clutter rate only (with known map), this estimates clutter maps on the fly)
 
+## How to run
 For each filter and within each implementation folder, run the "demo" script to see a preconfigured example.
 e.g. to run the CPHD filter with a UKF based implementation:
 
->> addpath _common
->> cd cphd/ukf/
->> demo
+'addpath _common'
+'cd cphd/ukf/'
+'demo'
 
-Notes:
+## Notes:
 
 1. All linear Gaussian examples use a 4D CV model (x/y position and velocity) with 2D observations (position only).
 
